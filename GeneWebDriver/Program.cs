@@ -15,7 +15,7 @@ int row = 26830;
 
 //记录当前是在执行基因名称的行号
 int CurrentNumber = 222;
-
+//注释
 //从第‘CurrentNumber’行开始扫描
 List<string> GeneNameValues = ExcelHelper.GetReadData(CurrentNumber);
 
