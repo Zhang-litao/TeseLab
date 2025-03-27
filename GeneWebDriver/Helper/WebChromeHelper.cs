@@ -55,14 +55,15 @@ namespace GeneWebDriver.Helper
             //options.AddArgument("--kiosk");
 
             // 全部（按F11可以退出全屏）
-            //options.AddArgument("--start-fullscreen");
+            //options.AddArgument("--start-fullscreen"); 
 
             //options.AddArguments("--test-type", "--ignore-certificate-errors");
 
             // 不自动关闭浏览器
-            options.LeaveBrowserRunning = true;
+            options.LeaveBrowserRunning = true;  
 
             ChromeDriverService chromeDriverService = ChromeDriverService.CreateDefaultService(@"C:\Program Files\Google\Chrome\Application\");
+             
             // 关闭每次调试时打开的CMD
             chromeDriverService.HideCommandPromptWindow = true;
             chromeDriverService.LogPath = GetLogLocation();
